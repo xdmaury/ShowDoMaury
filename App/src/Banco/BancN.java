@@ -9,7 +9,7 @@ public class BancN {
   private String driver = "com.mysql.jdbc.Driver";
   private String url = "jdbc:mysql://localhost:3306/mysql";
   private String usuario = "root";
-  private String senha = "123";
+  private String senha = "";
   private Connection Conexao;
   public Statement statement;
   public ResultSet resultset;
