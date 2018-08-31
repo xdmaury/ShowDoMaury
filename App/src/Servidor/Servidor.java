@@ -7,6 +7,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -52,20 +53,21 @@ public class Servidor extends Thread {
         }
 
     }
+    
+    Linhas pergunta = banco.sl(banco.perguntas_pergunta);
 
     public synchronized void acao() throws IOException {
         String dadoLido = entrada.readUTF();
         
-        Linhas pergunta = banco.sls(banco.perguntas);
-        int index = new Random().nextInt(pergunta.size());
-        while(pergunta.next()){
-            
-        }
-        System.out.println(pergunta.getS(index));
+        ArrayList pr=pergunta.ar();
+       
         
         
-        
-        
+      
+        int ind=new Random().nextInt(pr.size());
+        String pertunta= (String) pr.get(ind);
+        System.out.println(pertunta);
+        pr.remove(ind);
 
         /*if(dadoLido.contains("Bom Dia")){
          stb.append(dadoLido+"\n"+respostas[0][new Random().nextInt(2)]);

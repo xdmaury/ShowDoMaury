@@ -14,7 +14,7 @@ import bd.BancoT;
 public class teste {
     
     public static void main(String args[]){
-        BancoT banco = new BancoT(true);
+        BancoT banco = new BancoT(false);
         
     }
     
