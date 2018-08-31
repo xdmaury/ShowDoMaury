@@ -26,7 +26,7 @@ import org.json.JSONObject;
 
 public class Banco implements Cloneable{
     public String mysql="mysql";
-public  String bdNomeL="TesteAula";
+public  String bdNomeL="show_milhao";
 public String bdNome;
 public String host="localhost";
 public String porta="3306";

@@ -34,26 +34,27 @@ public class BancoT extends Banco {
 
     public static String perguntas = "perguntas";
     public static colunaT perguntas_IdPergunta = new colunaT("perguntas_IdPergunta",
-            perguntas, integer, true, "IdPergunta ");
+            perguntas, auto_increment, true, "IdPergunta ");
     public static colunaT perguntas_pergunta = new colunaT("perguntas_pergunta",
             perguntas, getvarchar(100), true, "pergunta ");
-    public static colunaT perguntas_Idcategoria = new colunaT("perguntas_Idcategoria",
-            perguntas, integer, true, "categoria ");
 
-    public static String categoria = "categoria";
-    public static colunaT categoria_Idcategoria = new colunaT("categoria_Idcategoria",
-            categoria, integer, true, "IdCategoria ");
-    public static colunaT categoria_nome = new colunaT("categoria_nome",
-            categoria, getvarchar(100), true, "nome ");
+
+
 
     public static String alternativas = "alternativas";
-    public static colunaT alternativas_Idcategoria = new colunaT("alternativas_Idcategoria",
-            alternativas, integer, true, "IdCategoria ");
     public static colunaT alternativas_IdPergunta = new colunaT("alternativas_IdPergunta",
             alternativas, integer, true, "IdPergunta ");
-    public static colunaT alternativas_IdResposta = new colunaT("alternativas_IdResposta",
-            alternativas, integer, true, "IdResposta ");
-    public static colunaT alternativas_resposta = new colunaT("alternativas_resposta",
-            alternativas, getvarchar(100), true, "resposta ");
-
+    public static colunaT alternativas_IdAlternativa = new colunaT("alternativas_IdAlternativa",
+            alternativas, auto_increment, true, "IdAlternativa ");
+    public static colunaT alternativas_resposta1 = new colunaT("alternativas_resposta1",
+            alternativas, getvarchar(100), true, "resposta1 ");
+    public static colunaT alternativas_resposta2 = new colunaT("alternativas_resposta2",
+            alternativas, getvarchar(100), true, "resposta2 ");
+    public static colunaT alternativas_resposta3 = new colunaT("alternativas_resposta3",
+            alternativas, getvarchar(100), true, "resposta3 ");
+    public static colunaT alternativas_resposta4 = new colunaT("alternativas_resposta4",
+            alternativas, getvarchar(100), true, "resposta4 ");
+    public static colunaT alternativas_resposta_correta = new colunaT("alternativas_resposta_correta",
+            alternativas, integer, true, "resposta_correta ");
+    
 }
